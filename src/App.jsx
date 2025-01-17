@@ -4,6 +4,7 @@ import "./App.css"
 import MeteoNavbar from "./components/MeteoNavbar.jsx"
 import CitySelect from "./components/CitySelect.jsx"
 import MeteoFooter from "./components/MeteoFooter.jsx"
+import CitiesCards from "./components/CitiesCards.jsx"
 
 //import CitiesCards from "./components/CitiesCards.jsx"
 
@@ -12,6 +13,7 @@ function App() {
     <>
       <MeteoNavbar />
       <CitySelect />
+      <CitiesCards />
 
       <MeteoFooter />
     </>

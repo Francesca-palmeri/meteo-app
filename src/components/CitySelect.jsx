@@ -25,7 +25,6 @@ const CitySelect = function () {
               onChange={handleLocationChange}
               // Aggiorna la città e il paese inseriti
             />
-            {/* Pulsante per avviare la ricerca */}
           </Col>
         </Row>
       </Container>
@@ -34,7 +33,6 @@ const CitySelect = function () {
           <Col xs={12} md={8}>
             {/* Card per il meteo */}
             <MeteoCard location={location} />
-            {/* Passiamo la città e il paese come prop al componente MeteoCard */}
           </Col>
         </Row>
       </Container>

@@ -41,14 +41,21 @@ const MeteoCard = function (props) {
     return <div>Impossibile recuperare i dati per {props.location}</div>
   }
 
+  const iconUrl = `https://openweathermap.org/img/wn/${meteoData.weather[0].icon}@2x.png`
   return (
     <Card className=" border border-3 border-info">
       <Card.Body>
         <Card.Title className=" fw-bolder text-danger">
-          {meteoData.weather.icon}
-          <h2>
-            {meteoData.name}, {meteoData.sys.country}
-          </h2>
+          <div className=" d-flex justify-content-start">
+            <h2>
+              {meteoData.name}, {meteoData.sys.country}
+            </h2>
+            <img
+              src={iconUrl}
+              alt={meteoData.weather[0].description}
+              style={{ width: "5%" }}
+            />
+          </div>
         </Card.Title>
         <Card.Text>
           <p>
@@ -68,6 +75,10 @@ const MeteoCard = function (props) {
           </p>
           <p>
             <span className=" fw-bold"> Vento:</span> {meteoData.wind.speed} m/s
+          </p>
+          <p>
+            <span className="fw-bold">Pioggia:</span>{" "}
+            {meteoData.rain ? meteoData.rain["1h"] : 0} mm/h
           </p>
         </Card.Text>
       </Card.Body>
