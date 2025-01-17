@@ -42,9 +42,9 @@ const MeteoCard = function (props) {
   }
 
   return (
-    <Card className="text-center">
+    <Card className=" border border-3 border-info">
       <Card.Body>
-        <Card.Title className=" fw-bolder">
+        <Card.Title className=" fw-bolder text-danger">
           {meteoData.weather.icon}
           <h2>
             {meteoData.name}, {meteoData.sys.country}

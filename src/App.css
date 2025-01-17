@@ -2,4 +2,10 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
+  background: rgb(175, 238, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(175, 238, 255, 1) 10%,
+    rgba(255, 255, 255, 1) 75%
+  );
 }
