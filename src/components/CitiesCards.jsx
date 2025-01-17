@@ -67,8 +67,8 @@ const CitiesCards = function () {
             if (!cityData) return null
             const iconUrl = `https://openweathermap.org/img/wn/${cityData.weather[0].icon}@2x.png`
             return (
-              <Col key={index} md={4} xl={2} className="mb-4">
-                <Card className=" h-100">
+              <Col key={index} md={4} xl={2} className=" mb-4">
+                <Card className="smallerCards h-100">
                   <Card.Body className=" d-flex flex-column align-content-center text-center">
                     <Card.Title className="fw-bolder text-info-emphasis">
                       <div className=" d-flex justify-content-center ">

@@ -2,7 +2,7 @@ import { Container, Row } from "react-bootstrap"
 
 const MeteoFooter = function () {
   return (
-    <footer className="footer mt-5 ms-3">
+    <footer className="footer">
       <Container fluid>
         <Row>
           <p>&copy;2025 MeteoApp. Tutti i diritti riservati.</p>

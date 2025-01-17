@@ -43,9 +43,9 @@ const MeteoCard = function (props) {
 
   const iconUrl = `https://openweathermap.org/img/wn/${meteoData.weather[0].icon}@2x.png`
   return (
-    <Card className=" border border-3 border-info">
+    <Card className="CardPrincipale ">
       <Card.Body>
-        <Card.Title className=" fw-bolder text-danger">
+        <Card.Title className=" fw-bolder ">
           <div className=" d-flex justify-content-start">
             <h2>
               {meteoData.name}, {meteoData.sys.country}

@@ -4,3 +4,28 @@ body {
   height: 100vh;
   background-color: aliceblue;
 }
+
+.CardPrincipale {
+  background-color: #adf1ff8e;
+  border: solid rgb(0, 0, 71);
+}
+
+.CardPrincipale h2 {
+  color: rgb(1, 0, 78);
+}
+
+.CardPrincipale p {
+  color: rgb(19, 19, 52);
+}
+
+.smallerCards {
+  border: solid rgba(132, 181, 211, 0.686);
+  background-color: transparent;
+}
+
+footer {
+  background-color: #0dcaf0;
+  margin-top: 5em;
+  padding-top: 1em;
+  padding-left: 1em;
+}
